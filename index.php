@@ -9,4 +9,7 @@
     <li>
         <a href="/BaiGiuaKy/login.php">Dang Nhap</a>
     </li>
+    <li>
+        <a href="/BaiGiuaKy/add.php">Danh sach chac nang</a>
+    </li>
 </ul>

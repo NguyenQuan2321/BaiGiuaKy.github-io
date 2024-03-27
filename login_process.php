@@ -14,7 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['id'] = $row['id'];
         $_SESSION['username'] = $row['username'];
         $_SESSION['role'] = $row['role'];
-        header("Location: list.php");
+        if ($row['role'] == 'admin') {
+            header("Location: add.php");
+        } else {
+            header("Location: list.php");
+        }
     } else {
         echo "Tên đăng nhập hoặc mật khẩu không đúng.";
     }
